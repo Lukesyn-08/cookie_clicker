@@ -1,0 +1,25 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    background-color: #f9f4ef;
+    justify-content: center;
+    align-items: center;
+}
+
+.logowanie {
+    border-radius: 8px;
+    border: 1px solid #8c7851;
+    box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.15);
+    width: 20%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.logowanie>input {
+    padding-top: 20px;
+}
