@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+}
+#wynik {
+    margin-top: 2%;
+    margin-left: 42.5%;
+    border-radius: 5px;
+    background-color: red;
+    width: 30vh;
+    height: 8vh;
+    text-align: center;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ciastko {
+    margin-left: 72vh;
+    margin-top: 10vh;
+    transition: 0.3s;
+    cursor: pointer;
+    height: 65vh;
+    width: 65vh;
+}
+#kursor {
+    top: 50%;
+    left: 50%;
+    /* margin-left: 50vh;
+    margin-top: 45vh; */
+    height: 5vh;
+    width: 5vh;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+#body {
+    height: 100vh;
+    background-image: linear-gradient(to top, lawngreen, black);
+    overflow: hidden;
+}
+nav {
+    width: 30vh;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+}
+#autoclicker {
+    width: 20vh;
+    height: 20vh;
+    cursor: pointer;
+}
+#autoclicker2 {
+    width: 20vh;
+    height: 20vh;
+    margin-left: 5vh;
+    display: none;
+}
+.autoclicker2 {
+    margin-left: 6vh;
+    width: 17vh;
+    display: block;
+}
+#plus1 {
+    width: 20vh;
+    height: 20vh;
+    cursor: pointer;
+}
+#p1 {
+    width: 20vh;
+    height: 20vh;
+    margin-left: 5vh;
+    display: none;
+}
+.p1 {
+    margin-left: 6vh;
+    width: 17vh;
+    display: block;
+}
+#plus5 {
+    width: 20vh;
+    height: 20vh;
+    cursor: pointer;
+}
+#p5 {
+    width: 20vh;
+    height: 20vh;
+    margin-left: 5vh;
+    display: none;
+}
+.p5 {
+    margin-left: 6vh;
+    width: 17vh;
+    display: block;
+}
+#combo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 7vh;
+    width: 10vw;
+    background-color: purple;
+    font-size: x-large;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+#p {
+    position: fixed;
+    bottom: 7vh;
+    right: 2.75vw;
+    font-size: x-large;
+    width: 10vh;
+    text-align: center;
+    justify-content: center;
+}
+#ciastko2 {
+    margin-left: 72vh;
+    margin-top: 10vh;
+    transition: 0.3s;
+    cursor: pointer;
+    height: 65vh;
+    width: 65vh;
+}
