@@ -1,7 +1,7 @@
 import './App.css'; 
 import ClickerPage from './pages/clicker';
-import LogowaniePage from './pages/logowanie';
-import { useState, useRef, useEffect } from 'react';
+// import LogowaniePage from './pages/logowanie';
+// import { useState, useRef, useEffect } from 'react';
 
 
 function App() {

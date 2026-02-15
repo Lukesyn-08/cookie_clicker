@@ -8,7 +8,7 @@ import p5Img from '../images/p5.png'
 import cookieImg from '../images/cookie.png'
 import kursorImg from '../images/kursor.png'
 import cookiegoldImg from '../images/cookiegold.png'
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 
 const ClickerPage = () => {
   let [punkty, setPunkty] = useState(0);
@@ -121,7 +121,7 @@ const ClickerPage = () => {
   const xRef = useRef(null);
   let [combo2, setCombo2] = useState(1);
 
-  const ustawCombo = () => {
+  const ustawCombo = useCallback(() => {
 
     setCombo1(prev => prev + 0.04);
     setCombo2(Math.floor(combo1));
@@ -132,7 +132,7 @@ const ClickerPage = () => {
       setCombo1(1);
       setCombo2(1);
     }, 1000);
-  }
+  }, [])  
 
   useEffect(() => {
     if (!autoclicker) return;
@@ -150,7 +150,7 @@ const ClickerPage = () => {
   
      return () => clearInterval(interval);
 
-  }, [autoclicker, cps]);
+  }, [autoclicker, cps, ustawCombo]);
 
   let [klik2, setKlik2] = useState(50);
   
@@ -177,7 +177,7 @@ const ClickerPage = () => {
       setPunkty(prev => prev + cps * 10);
     }, 5000);
 
-  }, [klik]);
+  }, klik, klik2, cps);
 
   return(
     <div id="body">
