@@ -132,7 +132,7 @@ const ClickerPage = () => {
       setCombo1(1);
       setCombo2(1);
     }, 1000);
-  }, [])  
+  }, [combo1])  
 
   useEffect(() => {
     if (!autoclicker) return;
@@ -177,7 +177,7 @@ const ClickerPage = () => {
       setPunkty(prev => prev + cps * 10);
     }, 5000);
 
-  }, klik, klik2, cps);
+  }, [klik, klik2, cps]);
 
   return(
     <div id="body">
